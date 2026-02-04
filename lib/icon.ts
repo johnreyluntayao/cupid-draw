@@ -1,0 +1,1 @@
+export { FaArrowRight as ArrowRight } from "react-icons/fa";
