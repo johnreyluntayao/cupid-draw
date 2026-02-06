@@ -15,10 +15,15 @@ const Button: React.FC<ButtonProps> = ({
   type = "button",
   className,
   ref,
+  isRounded = false,
 }) => {
-  const baseClasses = `flex items-center justify-center rounded-full transition-colors duration-200 hover:brightness-90 cursor-pointer h-[60px] lg:h-[64px] ${
+  const baseClasses = `flex items-center justify-center transition-colors duration-200 hover:brightness-90 cursor-pointer h-[60px] md:h-[64px] p-4 md:p-6 lg:p-8 ${
     isDisabled ? "opacity-50 cursor-not-allowed" : ""
   }`;
+
+  const radiusClasses = isRounded 
+    ? "rounded-full" 
+    : "rounded-md";
 
   const sizeClasses = size
     ? {
@@ -37,7 +42,7 @@ const Button: React.FC<ButtonProps> = ({
       type={type}
       onClick={onClick}
       disabled={isDisabled}
-      className={`${baseClasses} ${className} ${sizeClasses} ${textColor} ${backgroundColor} ${
+      className={`${baseClasses} ${radiusClasses} ${className} ${sizeClasses} ${textColor} ${backgroundColor} ${
         isDisabled ? "pointer-events-none" : ""
       }`}
     >
