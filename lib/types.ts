@@ -12,12 +12,20 @@ export interface ButtonProps {
   isDisabled?: boolean;
   type?: "button" | "submit" | "reset";
   ref?: React.ForwardedRef<HTMLButtonElement>;
+  isRounded?: boolean;
 }
 
-export interface StatusProps {
+export interface ChipProps {
   leftIcon?: ReactNode;
   rightIcon?: ReactNode;
   text?: ReactNode;
   textColor?: string;
   backgroundColor?: string;
+}
+
+export interface IconProps {
+  icon: React.ReactNode
+  size?: "sm" | "md" | "lg"
+  iconColor?: string
+  backgroundColor?: string
 }
