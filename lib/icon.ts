@@ -1,7 +1,21 @@
-export { FaArrowRight as ArrowRight,
+export {
+    FaArrowRight as ArrowRight,
     FaArrowLeft as ArrowLeft,
- } from "react-icons/fa";
+    FaGift as Gift,
+    FaUsers as Users,
+    FaInfinity as Infinity,
+    FaHeart as Heart,
 
- export { IoCloseSharp as Close } from "react-icons/io5";
+} from "react-icons/fa";
 
- export { IoMdMenu as Menu } from "react-icons/io";
+export {
+    IoSparkles as Sparkles,
+    IoCloseSharp as Close
+} from "react-icons/io5";
+
+export { IoMdMenu as Menu } from "react-icons/io";
+
+export {
+    IoEye as Eye,
+    IoEyeOff as EyeOff
+} from "react-icons/io5";
