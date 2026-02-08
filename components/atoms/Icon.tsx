@@ -17,12 +17,12 @@ const Icon: React.FC<IconProps> = ({
         disabled:pointer-events-none disabled:opacity-50`;
 
     const sizeStyles = size ? {
-        sm: "h-8 w-8 text-base",
-        md: "h-10 w-10 text-lg",
-        lg: "h-12 w-12 text-xl",
-    } [size] : "h-8 w-8 text-base" +
-        " md:h-10 md:w-10 md:text-lg" +
-        " lg:h-12 lg:w-12 lg:text-xl";
+        sm: "h-10 w-10 text-lg",
+        md: "h-14 w-14 text-xl",
+        lg: "h-16 w-16 text-2xl",
+    } [size] : "h-10 w-10 text-lg" +
+        " md:h-14 md:w-14 md:text-xl" +
+        " lg:h-16 lg:w-16 lg:text-2xl";
 
     return (
         <button
